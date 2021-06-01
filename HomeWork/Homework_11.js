@@ -1,11 +1,11 @@
 let animal = {
     jumps: null
-  };
-  let rabbit = {
+};
+let rabbit = {
     __proto__: animal,
     jumps: true
-  };
-  
+};
+
 console.log( rabbit.jumps ); // true
 
 delete rabbit.jumps;
@@ -45,36 +45,35 @@ console.log(bed.glasses);
 
 let animalTwo = {
     eat() {
-      this.full = true;
+        this.full = true;
     }
-  };
-  
-  let rabbitTwo = {
+};
+
+let rabbitTwo = {
     __proto__: animalTwo
-  };
-  
-  rabbitTwo.eat(); // rabbit
+};
+
+rabbitTwo.eat(); // rabbit
 
 //__________________________________
 
 let hamster = {
     stomach: [],
-  
     eat(food) {
-      this.stomach.push(food);
+        this.stomach.push(food);
     }
-  };
-  
-  let speedy = {
+};
+
+let speedy = {
     __proto__: hamster,
     stomach: []
-  };
-  
-  let lazy = {
+};
+
+let lazy = {
     __proto__: hamster,
     stomach: [] 
-  };
-  
+};
+
 speedy.eat("apple");
 console.log( speedy.stomach ); // apple
 
